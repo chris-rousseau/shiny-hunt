@@ -21,6 +21,7 @@ export default function Shasse() {
   };
 
   const pokemon = searchPokemon();
+  document.title = capitalizeFirstLetter(pokemon[0].name_fr) + ' - Shasse';
 
   useEffect(() => {
     if (localStorage.getItem(pokemon[0].slug) !== null) {
@@ -28,11 +29,13 @@ export default function Shasse() {
     }
   }, []);
 
+  // -1 au compteur
   const minusCount = () => {
     setNbTry(nbTry - 1);
     localStorage.setItem(pokemon[0].slug, nbTry - 1);
   };
 
+  // +1 au compteur
   const plusCount = (e) => {
     e.preventDefault();
     
@@ -56,6 +59,7 @@ export default function Shasse() {
     setShiny(!shiny);
   };
 
+  // Ajoute +1 au compteur à l'appuie d'une touche du clavier
   useEffect(() => {
     window.addEventListener("keyup", plusCount);
 
@@ -69,6 +73,7 @@ export default function Shasse() {
     info.remove();
   };
 
+  // Ajout du Pokemon au localStorage
   const gotIt = () => {
     let shinyGotcha = pokemon[0].slug;
 
@@ -89,6 +94,7 @@ export default function Shasse() {
     arrayShiny = localStorage.getItem("shiny").split(",");
   }
 
+  // Affichage soit du bouton shiny soit d'un message 
   if (arrayShiny.indexOf(pokemon[0].slug) === -1) {
     resultShiny = (
       <div className="result-shiny">

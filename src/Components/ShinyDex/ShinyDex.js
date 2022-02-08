@@ -11,6 +11,8 @@ export default function ShinyDex() {
 
   let arrayPokemon = false;
   let arrayShiny = [];
+
+  // Ajout des shiny du localstorage dans un tableau pour l'afficher sur la page
   if (localStorage.getItem("shiny") !== null) {
     arrayShiny = localStorage.getItem("shiny").split(",");
 
