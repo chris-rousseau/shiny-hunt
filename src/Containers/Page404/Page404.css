@@ -1,0 +1,29 @@
+.page-404 p {
+    width: 90%;
+    background-color: #282f38;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.page-404 a {
+    color: #d1c087;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media (min-width: 45em) {
+    .page-404 p {
+        width: 65%;
+    }
+  }
+  
+  @media (min-width: 75em) {
+    .page-404 p {
+        width: 50%;
+    }
+  }

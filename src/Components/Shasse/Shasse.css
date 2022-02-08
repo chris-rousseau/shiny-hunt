@@ -1,0 +1,299 @@
+.shasse-content {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  margin-top: 4.375em;
+}
+
+.shasse-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.75em;
+  background-color: #282f38;
+  margin: 0 auto;
+  border-radius: 0 50px 50px 0;
+  padding-left: 1.275em;
+}
+
+.shasse-info p {
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.625em;
+}
+
+.button-shiny {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 2.5em;
+  margin-bottom: 0.625em;
+}
+
+.button-shiny button {
+  background: linear-gradient(to right, rgb(126, 126, 175), rgb(198, 148, 207));
+  border: 0;
+  border-radius: 25px;
+  padding: 7px 10px;
+  color: #282f38;
+}
+
+.shasse-info img {
+  position: absolute;
+  width: 4.375em;
+  top: -5px;
+  left: -50px;
+  background-color: #fff3d5;
+  border: 2px solid #282f38;
+  border-radius: 50%;
+}
+
+.center-shasse-info {
+  margin-left: 3em;
+}
+
+.counter {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.try {
+  display: flex;
+  align-items: center;
+  font-family: "Azeret Mono", monospace;
+  font-size: 5em;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+.try-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.try-buttons button {
+  padding: 25px 30px;
+  border-radius: 50px;
+  border: 0;
+  color: #282f38;
+  font-size: 1em;
+}
+
+.try-minus-button {
+  background: linear-gradient(to bottom right, #996464, #dfa1a1);
+}
+
+.try-plus-button {
+  background: linear-gradient(to bottom right, #5d8b6b, #a1dfb4);
+  margin-left: 40px;
+}
+
+.info-space-button {
+  display: none;
+}
+
+.result-shiny {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 6.25em;
+}
+
+.gotcha-button {
+  width: 100%;
+  height: 3.125em;
+  border-radius: 50px;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  background: linear-gradient(
+      217deg,
+      rgba(214, 126, 126, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(131, 218, 131, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(74, 74, 172, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  color: #fff3d5;
+}
+
+.result-shiny img {
+  position: absolute;
+}
+
+.result-shiny img:nth-child(1) {
+  width: 20px;
+  top: -10px;
+  left: -10px;
+  transform: rotate(35deg);
+}
+
+.result-shiny img:nth-child(2) {
+  width: 40px;
+  top: -20px;
+  right: -10px;
+  transform: rotate(-15deg);
+}
+
+.result-shiny img:nth-child(3) {
+  width: 10px;
+  top: -20px;
+  transform: rotate(-15deg);
+}
+
+.gotcha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3.125em;
+  background-color: #7eb679;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 6.25em;
+}
+
+.gotcha img {
+  display: none;
+}
+
+.gotcha a {
+  color: #282f38;
+  text-decoration: none;
+}
+
+.dark-modal {
+  position: absolute;
+  background: rgba(12, 24, 39, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #282f38;
+}
+
+.modal-buttons {
+  text-align: right;
+  padding: 0 5px;
+  margin-top: 20px;
+}
+
+.modal button {
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.button-no,
+.button-yes {
+  background-color: #d14747;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.button-yes {
+  background-color: #67c867;
+}
+
+@media (min-width: 20em) {
+  .gotcha img {
+    display: block;
+    width: 1.563em;
+    height: 1.563em;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 45em) {
+  .shasse-content, .modal {
+    width: 60%;
+  }
+
+  .shasse-info p {
+    font-size: 1.5em;
+  }
+
+  .pokemon-info {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .try {
+    font-size: 8em;
+  }
+
+  .result-shiny {
+    width: 60%;
+  }
+
+  .gotcha {
+    width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  .button-shiny button,
+  .try-buttons button,
+  .gotcha-button {
+    cursor: pointer;
+  }
+
+  .result-shiny {
+    transition: transform 0.2s;
+  }
+
+  .result-shiny:hover {
+    transform: scale(1.5);
+  }
+
+  .info-space-button {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgba(40, 47, 56, 0.2);
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .close-info {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #282f38;
+    padding: 4px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 75em) {
+  .shasse-content, .modal {
+    width: 40%;
+  }
+
+  .result-shiny {
+    width: 50%;
+  }
+}

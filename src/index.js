@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import Header from "./Containers/Header/Header";
+import Footer from "./Containers/Footer/Footer";
+import Shasse from "./Components/Shasse/Shasse";
+import Page404 from "./Containers/Page404/Page404";
+import ShinyDex from "./Components/ShinyDex/ShinyDex";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+    <Header />
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/shasse/:id" element={<Shasse />} />
+      <Route path="/shinydex" element={<ShinyDex />} />
+      <Route path="*" element={<Page404 />} />
+    </Routes>
+    <Footer />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

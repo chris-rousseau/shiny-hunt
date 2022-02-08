@@ -1,0 +1,83 @@
+.header-background {
+    background-color: #282f38;
+    border-bottom: 1px solid rgba(255, 243, 213, .7);
+    height: 3.125em;
+    margin-bottom: 3.75em;
+}
+
+.navigation {
+    background-color: #fff3d5;
+    width: 90%;
+    height: 3.75em;
+    border-radius: 0 0 20px 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #222222;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-loupe {
+    background-image: url('./img/loupe-bleue.png');
+}
+
+.nav-pokeball {
+    background-image: url('./img/pokeball-bleue.png');
+}
+
+.nav-loupe, .nav-pokeball {
+    background-color: #fff3d5;
+    border: 4px solid #26394f;
+}
+
+.link-loupe, .link-pokeball {
+    margin-top: 3.75em;
+}
+
+.nav-loupe:hover{
+    background-image: url('./img/loupe-blanche.png');
+}
+
+.nav-pokeball:hover{
+    background-image: url('./img/pokeball-blanche.png');
+}
+
+.nav-loupe:hover, .nav-pokeball:hover {
+    background-color: #26394f;
+    cursor: pointer;
+    border: 4px solid #fff3d5;
+}
+
+.nav-loupe, .nav-pokeball, .nav-loupe:hover, .nav-pokeball:hover {
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    background-position-x: center;
+    background-position-y: 10px;
+    border-radius: 0 0 20px 20px;
+    height: 5.625em;
+    padding: 0 7px;
+    border-top: 0;
+    transition: all .2s ease-out;
+}
+
+.nav-loupe a, .nav-pokeball a {
+    text-decoration: none;
+    color: #26394f;
+}
+
+.nav-loupe:hover a, .nav-pokeball:hover a {
+    text-decoration: none;
+    color: #fff3d5;
+}
+
+@media (min-width: 26.875em) {
+    .navigation {
+        width: 21.875em;
+    }
+
+    .nav-loupe, .nav-pokeball, .nav-loupe:hover, .nav-pokeball:hover {
+        padding: 0 10px;
+    }
+}

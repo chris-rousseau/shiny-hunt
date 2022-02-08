@@ -1,0 +1,55 @@
+.search {
+    margin-top: 5em;
+}
+
+.form-search {
+    width: 100%;
+    text-align: center;
+}
+
+.search p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgba(40, 47, 56, .2);
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: .9em;
+}
+
+.search a {
+    color: #d1c087;
+}
+
+.search input {
+    width: 90%;
+    height: 2.5em;
+    background-color: #282f38;
+    border-radius: 50px;
+    border: 0;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    color: #fff3d5;
+}
+
+.search input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+}
+
+.request {
+    margin-bottom: 5em;
+}
+
+@media (min-width: 45em) {
+    .search p, .search input {
+        width: 65%;
+    }
+}
+
+@media (min-width: 75em) {
+    .search p, .search input {
+        width: 50%;
+    }
+}
