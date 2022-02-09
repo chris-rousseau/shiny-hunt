@@ -1,5 +1,7 @@
 .search {
     margin-top: 5em;
+    flex: 1 0 auto;
+    flex-shrink: 0;
 }
 
 .form-search {
