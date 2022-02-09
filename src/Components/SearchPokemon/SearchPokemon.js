@@ -22,7 +22,7 @@ export default function SearchPokemon() {
   const filtering = (arr, name) => {
     return arr.filter(
       (pokemon) =>
-        pokemon.name_fr.toString().toLowerCase().indexOf(name.toLowerCase()) !==
+        pokemon.name_fr.toString().toLowerCase().replace(/é|è|ê/g, 'e').replace('ç', 'c').indexOf(name.toString().toLowerCase().replace(/é|è|ê/g, 'e').replace('ç', 'c')) !==
         -1
     );
   };
