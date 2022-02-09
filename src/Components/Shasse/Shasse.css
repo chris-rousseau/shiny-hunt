@@ -168,7 +168,7 @@
 }
 
 .dark-modal {
-  position: absolute;
+  position: fixed;
   background: rgba(12, 24, 39, 0.8);
   top: 0;
   left: 0;
@@ -181,7 +181,7 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: #fff3d5;
   width: 90%;
   height: auto;
   border-radius: 10px;

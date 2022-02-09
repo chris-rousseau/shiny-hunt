@@ -163,7 +163,7 @@ export default function Shasse() {
         {modal && (
           <div className="dark-modal">
             <div className="modal">
-              C'est officiel, tu viens de l'attraper en shiny ?!
+              C'est fait, tu viens de l'attraper en shiny ?!
               <div className="modal-buttons">
                 <button onClick={toggleModal} className="button-no">
                   Non 😞
